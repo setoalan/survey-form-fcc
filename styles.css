@@ -2,8 +2,14 @@ body {
   background-color: aquamarine;
 }
 
+label::after {
+  content: '\A';
+  white-space: pre;
+}
+
 .row {
   display: flex;
+  margin: 2em 0;
 }
 
 .row > * {
@@ -11,8 +17,9 @@ body {
 }
 
 .row > *:first-child {
-  justify-content: flex-end;
-  align-self: flex-end;
+  margin-right: 1em;
+  text-align: right;
+  align-self: flex-start;
 }
 
 #title {
@@ -24,13 +31,18 @@ body {
 }
 
 #survey-form {
-  background-color: white;
   max-width: 720px;
   margin: 0 auto;
   padding: 2em;
-  text-align: right;
+  background-color: white;
+}
+
+#button-div {
+  width: 100%;
+  text-align: center;
 }
 
 #submit {
-  text-align: center;
+  width: 12em;
+  height: 3em;
 }

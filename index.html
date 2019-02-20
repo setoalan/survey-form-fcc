@@ -14,8 +14,8 @@
 </head>
 <body>
   <h1 id="title">Survey Form</h1>
-  <p id="description">A random survey.</p>
   <form id="survey-form">
+    <p id="description">A random survey.</p>
     <div class="row">
       <label id="name-label" for="name">Name</label>
       <input id="name" type="text" placeholder="Enter your name" required>
@@ -78,7 +78,9 @@
       <label>Any Comments or Suggestions?</label>
       <textarea rows="4" cols="40"></textarea> 
     </div>
-    <button id="submit" type="submit">Submit</button>
+    <div id="button-div">
+      <button id="submit" type="submit">Submit</button>
+    </div>
   </form>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
