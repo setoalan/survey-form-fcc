@@ -16,49 +16,68 @@
   <h1 id="title">Survey Form</h1>
   <p id="description">A random survey.</p>
   <form id="survey-form">
-    <label id="name-label" for="name">
-      Name: <input id="name" type="text" placeholder="Enter your name" required>
-    </label>
-    <label id="email-label" for="email">
-      Email: <input id="email" type="email" placeholder="Enter your email" required>
-    </label>
-    <label id="number-label" for="number">
-      Age: <input id="number" type="number" min="1" max="100" placeholder="Number" required>
-    </label>
-    <select id="dropdown">
-      <option value="10k">$0-10k</option>
-      <option value="35k">$10-35k</option>
-      <option value="60k">$35-60k</option>
-      <option value="60k+">$60k+</option>
-    </select>
-    <label for="male">
-      <input id="male" type="radio" name="gender" value="male"> Male
-    </label>
-    <label for="female">
-      <input id="female" type="radio" name="gender" value="female"> Female
-    </label>
-    <label for="na">
-      <input id="na" type="radio" name="gender" value="na"> N/A
-    </label>
-    <label for="pizza">
-      <input id="pizza" type="checkbox" name="food" value="pizza"> Pizza
-    </label>
-    <label for="pasta">
-      <input id="pasta" type="checkbox" name="food" value="pasta"> Pasta
-    </label>
-    <label for="salad">
-      <input id="salad" type="checkbox" name="food" value="salad"> Salad
-    </label>
-    <label for="steak">
-      <input id="steak" type="checkbox" name="food" value="steak"> Steak
-    </label>
-    <label for="soup">
-      <input id="soup" type="checkbox" name="food" value="soup"> Soup
-    </label>
-    <label for="other">
-      <input id="other" type="checkbox" name="food" value="other"> Other
-    </label>
-    <textarea rows="4" cols="40"></textarea> 
+    <div class="row">
+      <label id="name-label" for="name">Name</label>
+      <input id="name" type="text" placeholder="Enter your name" required>
+    </div>
+    <div class="row">
+      <label id="email-label" for="email">Email:</label>
+      <input id="email" type="email" placeholder="Enter your email" required>
+    </div>
+    <div class="row">
+      <label id="number-label" for="number">Age:</label>
+      <input id="number" type="number" min="1" max="100" placeholder="Number" required>
+    </div>
+    <div class="row">
+      <label id="dropdown-label" for="dropdown">Salary Range:</label>
+      <select id="dropdown">
+        <option value="10k">$0-10k</option>
+        <option value="35k">$10-35k</option>
+        <option value="60k">$35-60k</option>
+        <option value="60k+">$60k+</option>
+      </select>
+    </div>
+    <div class="row">
+      <label>Gender:</label>
+      <div>
+        <label for="male">
+          <input id="male" type="radio" name="gender" value="male"> Male
+        </label>
+        <label for="female">
+          <input id="female" type="radio" name="gender" value="female"> Female
+        </label>
+        <label for="na">
+          <input id="na" type="radio" name="gender" value="na"> N/A
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <label>Favorite Foods:</label>
+      <div>
+        <label for="pizza">
+          <input id="pizza" type="checkbox" name="food" value="pizza"> Pizza
+        </label>
+        <label for="pasta">
+          <input id="pasta" type="checkbox" name="food" value="pasta"> Pasta
+        </label>
+        <label for="salad">
+          <input id="salad" type="checkbox" name="food" value="salad"> Salad
+        </label>
+        <label for="steak">
+          <input id="steak" type="checkbox" name="food" value="steak"> Steak
+        </label>
+        <label for="soup">
+          <input id="soup" type="checkbox" name="food" value="soup"> Soup
+        </label>
+        <label for="other">
+          <input id="other" type="checkbox" name="food" value="other"> Other
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <label>Any Comments or Suggestions?</label>
+      <textarea rows="4" cols="40"></textarea> 
+    </div>
     <button id="submit" type="submit">Submit</button>
   </form>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>

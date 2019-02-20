@@ -1,0 +1,36 @@
+body {
+  background-color: aquamarine;
+}
+
+.row {
+  display: flex;
+}
+
+.row > * {
+  flex: 1;
+}
+
+.row > *:first-child {
+  justify-content: flex-end;
+  align-self: flex-end;
+}
+
+#title {
+  text-align: center;
+}
+
+#description {
+  text-align: center;
+}
+
+#survey-form {
+  background-color: white;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2em;
+  text-align: right;
+}
+
+#submit {
+  text-align: center;
+}
